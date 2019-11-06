@@ -1,5 +1,7 @@
 def pInventory():
-    pass
+    print("You have:")
+    print("1 key")
+    print("1 stone")
 
 print("You are here")
 print("What do you want to do")
@@ -11,4 +13,4 @@ elif direction=="r":
 else:
     print("uknown command")
 
-
+pInventory()
