@@ -3,7 +3,9 @@ def pInventory():
     print("1 key")
     print("1 stone")
 
-print("You are here")
+def pLocation():
+    print("You are here")
+
 print("What do you want to do")
 direction=input("l for left,r for right")
 if direction=="l":
@@ -14,3 +16,4 @@ else:
     print("uknown command")
 
 pInventory()
+pLocation()
