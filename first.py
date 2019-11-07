@@ -7,13 +7,18 @@ def pLocation():
     print("You are here")
 
 print("What do you want to do")
-direction=input("l for left,r for right")
-if direction=="l":
-    print("You went left")
-elif direction=="r":
-    print("You went right")
-else:
-    print("uknown command")
+
+def directionInput():
+    direction=input("l for left,r for right")
+    return direction
+
+def handleDirectionInput(direction):
+    if direction=="l":
+        print("You went left")
+    elif direction=="r":
+        print("You went right")
+    else:
+        print("uknown command")
 
 pInventory()
 pLocation()
