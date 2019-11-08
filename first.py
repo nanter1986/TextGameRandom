@@ -1,3 +1,5 @@
+import roomGenerator
+
 def pInventory():
     print("You have:")
     print("1 key")
