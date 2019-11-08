@@ -22,3 +22,7 @@ def handleDirectionInput(direction):
 
 pInventory()
 pLocation()
+directionNow=directionInput()
+handleDirectionInput(directionNow)
+
+print("END OF PROGRAM")
