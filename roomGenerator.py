@@ -3,3 +3,4 @@ class Room:
         pass
 
     furniture=[]
+    npcs=[]
