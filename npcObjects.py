@@ -1,2 +1,5 @@
 class npcObjects:
-    pass
+    pointsOfInterest=[]
+    dialog=[]
+    picking=False
+    otherObjects=[]
