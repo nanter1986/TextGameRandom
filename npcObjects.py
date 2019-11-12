@@ -1,6 +1,10 @@
 class npcObjects:
-    name=""
-    pointsOfInterest=[]
-    dialog=[]
-    picking=False
-    otherObjects=[]
+    def chooseName():
+        pass
+
+    def __init__(self):
+        name=chooseName()
+        pointsOfInterest=[]
+        dialog=[]
+        picking=False
+        otherObjects=[]
