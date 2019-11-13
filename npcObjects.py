@@ -2,12 +2,21 @@ class npcObjects:
     def chooseName():
         pass
 
-    def choosePointsOfInterest():
+    def choosePointsOfInterest(name):
+        pass
+
+    def chooseDialog(name):
+        pass
+
+    def definePickability(name):
+        pass
+
+    def chooseInsideObjects(name):
         pass
 
     def __init__(self):
         name=chooseName()
-        pointsOfInterest=[]
-        dialog=[]
-        picking=False
-        otherObjects=[]
+        pointsOfInterest=choosePointsOfInterest(name)
+        dialog=chooseDialog(name)
+        picking=definePickability(name)
+        otherObjects=chooseInsideObjects(name)
