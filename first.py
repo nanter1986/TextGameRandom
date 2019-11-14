@@ -6,7 +6,12 @@ def pInventory():
     print("1 stone")
 
 def pLocation():
-    print("You are here")
+    room=Room()
+    for i in room.furniture:
+        print("name:"+i.name)
+        print("contains:")
+        for point in i.pointsOfInterest
+
 
 print("What do you want to do")
 
