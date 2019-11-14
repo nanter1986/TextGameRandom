@@ -1,0 +1,2 @@
+def chooseName():
+    return "Object"

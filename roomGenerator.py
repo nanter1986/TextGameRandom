@@ -1,11 +1,11 @@
-import random
-import npcObjects
+from random import randint
+from npcObjects import *
 
 class Room:
-    furniture=[]
-    enemies=[]
     def __init__(self):
+        self.furniture=[]
+        self.enemies=[]
         for i in range(0,10):
-            number=random.randint(0,3)
+            number=randint(0,3)
             if number>0:
-                furniture.append(npcObjects())
+                self.furniture.append(npcObjects())

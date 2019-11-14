@@ -1,4 +1,4 @@
-import roomGenerator
+from roomGenerator import *
 
 def pInventory():
     print("You have:")
@@ -10,7 +10,8 @@ def pLocation():
     for i in room.furniture:
         print("name:"+i.name)
         print("contains:")
-        for point in i.pointsOfInterest
+        for point in i.pointsOfInterest:
+            print(point)
 
 
 print("What do you want to do")

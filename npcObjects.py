@@ -1,6 +1,14 @@
+from nameChooser import chooseName
+
+
 class npcObjects:
-    def chooseName():
-        return "Object" 
+
+    def __init__(self):
+        self.name=chooseName()
+        self.pointsOfInterest=choosePointsOfInterest(name)
+        self.dialog=chooseDialog(name)
+        self.picking=definePickability(name)
+        self.otherObjects=chooseInsideObjects(name)
 
     def choosePointsOfInterest(name):
         return []
@@ -14,9 +22,4 @@ class npcObjects:
     def chooseInsideObjects(name):
         return []
 
-    def __init__(self):
-        name=chooseName()
-        pointsOfInterest=choosePointsOfInterest(name)
-        dialog=chooseDialog(name)
-        picking=definePickability(name)
-        otherObjects=chooseInsideObjects(name)
+
