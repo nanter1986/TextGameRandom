@@ -1,17 +1,17 @@
 from nameChooser import chooseName
+from poiChooser import choosePointsOfInterest
 
 
 class npcObjects:
 
     def __init__(self):
         self.name=chooseName()
-        self.pointsOfInterest=choosePointsOfInterest(name)
+        print("name is ..."+self.name)
+        self.pointsOfInterest=choosePointsOfInterest(self.name)
         self.dialog=chooseDialog(name)
         self.picking=definePickability(name)
         self.otherObjects=chooseInsideObjects(name)
 
-    def choosePointsOfInterest(name):
-        return []
 
     def chooseDialog(name):
         return []

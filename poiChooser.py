@@ -1,0 +1,2 @@
+def choosePointsOfInterest(name):
+    return []
