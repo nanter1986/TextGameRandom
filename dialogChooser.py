@@ -1,0 +1,2 @@
+def chooseDialog(name):
+    return []
