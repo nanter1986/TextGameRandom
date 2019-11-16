@@ -1,9 +1,10 @@
 from roomGenerator import *
+from inventoryHandler import *
+
+inventory=createInventory()
 
 def pInventory():
-    print("You have:")
-    print("1 key")
-    print("1 stone")
+    displayInventory(inventory)
 
 def pLocation():
     room=Room()
