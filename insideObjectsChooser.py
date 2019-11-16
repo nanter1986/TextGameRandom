@@ -1,0 +1,2 @@
+def chooseInsideObjects(name):
+    return []

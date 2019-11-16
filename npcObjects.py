@@ -2,6 +2,7 @@ from nameChooser import chooseName
 from poiChooser import choosePointsOfInterest
 from dialogChooser import chooseDialog 
 from pickabilityDefiner import definePickability
+from insideObjectChooser import chooseInsideObjects
 
 
 class npcObjects:
@@ -15,7 +16,5 @@ class npcObjects:
         self.otherObjects=chooseInsideObjects(self.name)
 
 
-    def chooseInsideObjects(name):
-        return []
 
 
