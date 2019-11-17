@@ -1,7 +1,9 @@
 from roomGenerator import *
 from inventoryHandler import *
+from moneyManager import *
 
 inventory=createInventory()
+money=106
 
 def pInventory():
     displayInventory(inventory)
@@ -13,6 +15,9 @@ def pLocation():
         print("contains:")
         for point in i.pointsOfInterest:
             print(point)
+
+def pMoney():
+    displayMoney(money)
 
 
 print("What do you want to do")
@@ -31,6 +36,7 @@ def handleDirectionInput(direction):
 
 pInventory()
 pLocation()
+pMoney()
 directionNow=directionInput()
 handleDirectionInput(directionNow)
 
