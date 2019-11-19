@@ -36,6 +36,7 @@ def handleDirectionInput(direction):
         print("uknown command")
 
 mainDb()
+create_name_value_pair("name","frechat")
 pInventory()
 pLocation()
 pMoney()
