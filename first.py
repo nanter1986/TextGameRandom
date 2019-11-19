@@ -1,6 +1,7 @@
 from roomGenerator import *
 from inventoryHandler import *
 from moneyManager import *
+from dbEditor import *
 
 inventory=createInventory()
 money=106
@@ -34,6 +35,7 @@ def handleDirectionInput(direction):
     else:
         print("uknown command")
 
+mainDb()
 pInventory()
 pLocation()
 pMoney()

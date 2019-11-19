@@ -1,4 +1,4 @@
-from sqlite3 import *
+import sqlite3 
 from sqlite3 import Error
 
 def create_connection(db_file):
@@ -9,9 +9,6 @@ def create_connection(db_file):
         print(sqlite3.version)
     except Error as e:
         print(e)
-    finally:
-        if conn:
-            conn.close()
 
     return conn
 
@@ -55,9 +52,6 @@ def mainDb():
  
     # create tables
     if conn is not None:
-        # create projects table
-        create_table(conn, sql_create_projects_table)
- 
         # create tasks table
         create_table(conn, sql_create_tasks_table)
     else:
