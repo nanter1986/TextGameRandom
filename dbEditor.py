@@ -29,7 +29,7 @@ def create_table(conn, create_table_sql):
         print(e)
         
 
-def main():
+def mainDb():
     database = r"./myGameDb.db"
  
     sql_create_projects_table = """ CREATE TABLE IF NOT EXISTS projects (
@@ -63,6 +63,16 @@ def main():
     else:
         print("Error! cannot create the database connection.")
  
+def create_name_value_pair(conn, name, value):
+    """
+    Create a new task
+    :param conn:
+    :param task:
+    :return:
+    """
  
-if __name__ == '__main__':
-    main()
+    sql = ''' INSERT INTO tasks(name,value)
+              VALUES(?,?) '''
+    cur = conn.cursor()
+    cur.execute(sql, name,value)
+    return cur.lastrowid 
