@@ -63,3 +63,25 @@ def create_name_value_pair(name, value):
         cur.execute(sql, pair)
         print(str(cur.lastrowid))
         print(pair)
+
+
+def update_value_of_name(name, value):
+    """
+    Create a new task
+    :param conn:
+    :param task:
+    :return:
+    """
+ 
+    database = r"./myGameDb.db"
+    conn=create_connection(database)
+    sql = ''' UPDATE tasks
+                SET value=?
+                WHERE name=? '''
+    pair=(value,name)
+    with conn:
+        cur = conn.cursor()
+        cur.execute(sql, pair)
+        conn.commit()
+        print(str(cur.lastrowid))
+        print(pair)
