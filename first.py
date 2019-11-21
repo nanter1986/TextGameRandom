@@ -36,11 +36,17 @@ def handleDirectionInput(direction):
         print("uknown command")
 
 mainDb()
-create_name_value_pair("name","frechat")
 pInventory()
 pLocation()
 pMoney()
 directionNow=directionInput()
 handleDirectionInput(directionNow)
+print("will try to update")
+replacer=input("replacer?")
+update_value_of_name("name",str(replacer))
+print("past update")
+print("access")
+
+access_db_vaulues_by_name("name")
 
 print("END OF PROGRAM")

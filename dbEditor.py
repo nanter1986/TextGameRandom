@@ -66,13 +66,6 @@ def create_name_value_pair(name, value):
 
 
 def update_value_of_name(name, value):
-    """
-    Create a new task
-    :param conn:
-    :param task:
-    :return:
-    """
- 
     database = r"./myGameDb.db"
     conn=create_connection(database)
     sql = ''' UPDATE tasks
@@ -85,3 +78,18 @@ def update_value_of_name(name, value):
         conn.commit()
         print(str(cur.lastrowid))
         print(pair)
+
+def access_db_vaulues_by_name(name):
+    database = r"./myGameDb.db"
+    conn=create_connection(database)
+    sql = ''' SELECT * FROM tasks WHERE name=?'''
+
+    pair=(name,)
+    with conn:
+        cur = conn.cursor()
+        cur.execute(sql, pair)
+        #conn.commit()
+        rows = cur.fetchall()
+        for row in rows:
+            print(row)
+
