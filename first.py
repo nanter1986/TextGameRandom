@@ -21,9 +21,10 @@ def pMoney():
     displayMoney(money)
 
 
-print("What do you want to do")
 
 def directionInput():
+    print("What do you want to explore?")
+    options=["table","chair","window"]
     direction=input("l for left,r for right")
     return direction
 
