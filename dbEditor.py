@@ -90,6 +90,7 @@ def access_db_vaulues_by_name(name):
         cur.execute(sql, pair)
         #conn.commit()
         rows = cur.fetchall()
-        for row in rows:
-            print(row)
+        #for row in rows:
+        #    print(row)
+        print("first element"+str(rows[0]))
 
