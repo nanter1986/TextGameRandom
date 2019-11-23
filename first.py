@@ -1,3 +1,4 @@
+from nameChooser import *
 from roomGenerator import *
 from inventoryHandler import *
 from moneyManager import *
