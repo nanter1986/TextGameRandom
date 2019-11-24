@@ -25,9 +25,8 @@ def pMoney():
 
 def directionInput():
     print("What do you want to explore?")
-    options=["table","chair","window"]
-    direction=input("l for left,r for right")
-    return direction
+    selection=chooseName()
+    print(selection)
 
 def handleDirectionInput(direction):
     if direction=="l":
@@ -42,7 +41,7 @@ pInventory()
 pLocation()
 pMoney()
 directionNow=directionInput()
-handleDirectionInput(directionNow)
+#handleDirectionInput(directionNow)
 print("will try to update")
 replacer=input("replacer?")
 update_value_of_name("name",str(replacer))
