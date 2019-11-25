@@ -1,6 +1,7 @@
 def choosePointsOfInterest(name):
+    pois=None
     if name=="table":
-        pass
+        pois=getTablePois()
     elif name=="chair":
-        pass1
-    return []
+        pois=getChairPois()
+    return pois
