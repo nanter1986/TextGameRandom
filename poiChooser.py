@@ -1,3 +1,6 @@
+def getTablePois():
+    pass
+
 def choosePointsOfInterest(name):
     pois=None
     if name=="table":
