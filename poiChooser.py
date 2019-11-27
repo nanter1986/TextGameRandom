@@ -1,10 +1,12 @@
 from secrets import randbelow
 
 def getTablePois():
+    options=["drawer","book","gem"]
     randonNumber=randbelow(len(options))
 
 def getChairPois():
-    pass
+    options=[]
+    randonNumber=randbelow(len(options))
 
 def choosePointsOfInterest(name):
     pois=None
