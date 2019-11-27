@@ -1,5 +1,7 @@
+from secrets import randbelow
+
 def getTablePois():
-    pass
+    randonNumber=randbelow(len(options))
 
 def getChairPois():
     pass
