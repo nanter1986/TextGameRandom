@@ -5,7 +5,7 @@ def getTablePois():
     randonNumber=randbelow(len(options))
 
 def getChairPois():
-    options=[]
+    options=["pillow","wood"]
     randonNumber=randbelow(len(options))
 
 def choosePointsOfInterest(name):
