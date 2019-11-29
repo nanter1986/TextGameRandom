@@ -3,6 +3,7 @@ from roomGenerator import *
 from inventoryHandler import *
 from moneyManager import *
 from dbEditor import *
+from npcObjects import npcObjects
 
 inventory=createInventory()
 money=106
@@ -26,7 +27,8 @@ def pMoney():
 def directionInput():
     print("What do you want to explore?")
     selection=chooseName()
-    print(selection)
+    npc=npcObjects(selection)
+    print(npc.name)
 
 def handleDirectionInput(direction):
     if direction=="l":
