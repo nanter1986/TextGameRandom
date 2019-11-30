@@ -26,8 +26,7 @@ def pMoney():
 
 def directionInput():
     print("What do you want to explore?")
-    selection=chooseName()
-    npc=npcObjects(selection)
+    npc=npcObjects()
     print(npc.name)
     print("points of interest:")
     print(npc.pointsOfInterest)
@@ -42,7 +41,7 @@ def handleDirectionInput(direction):
 
 mainDb()
 pInventory()
-pLocation()
+#pLocation()
 pMoney()
 directionNow=directionInput()
 #handleDirectionInput(directionNow)
