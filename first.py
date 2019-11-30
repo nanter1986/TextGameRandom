@@ -29,6 +29,8 @@ def directionInput():
     selection=chooseName()
     npc=npcObjects(selection)
     print(npc.name)
+    print("points of interest:")
+    print(npc.pointsOfInterest)
 
 def handleDirectionInput(direction):
     if direction=="l":
