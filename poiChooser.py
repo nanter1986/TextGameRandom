@@ -1,16 +1,18 @@
 from secrets import randbelow
 
 def probabilisticChooserOfPois(options,probability):
-    pass
-
-def getTablePois():
     container=[]
-    options=["drawer","book","gem"]
     randomNumber=randbelow(len(options))
     for op in options:
-        randomNumber=randbelow(3)
+        randomNumber=randbelow(probability)
         if randonNumber==0:
             container.append(op)
+    return container
+
+def getTablePois():
+    options=["drawer","book","gem"]
+    probability=3
+    probabilisticChooserOfPois(options,probability)
     return container
 
 def getChairPois():
