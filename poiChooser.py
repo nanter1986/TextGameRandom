@@ -5,19 +5,24 @@ def probabilisticChooserOfPois(options,probability):
     randomNumber=randbelow(len(options))
     for op in options:
         randomNumber=randbelow(probability)
-        if randonNumber==0:
+        if randomNumber==0:
             container.append(op)
+            print("probChooser chose "+str(op))
     return container
 
 def getTablePois():
+    cont=None
     options=["drawer","book","gem"]
     probability=3
-    probabilisticChooserOfPois(options,probability)
-    return container
+    cont=probabilisticChooserOfPois(options,probability)
+    return cont
 
 def getChairPois():
     options=["pillow","wood"]
-    randonNumber=randbelow(len(options))
+    cont=None
+    probability=3
+    cont=probabilisticChooserOfPois(options,probability)
+    return cont
 
 def choosePointsOfInterest(name):
     pois=None
