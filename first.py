@@ -26,6 +26,7 @@ def pMoney():
 
 def directionInput():
     print("What do you want to explore?")
+    createRandomNumberOfObjects()
     npc=npcObjects()
     print(npc.name)
     print("points of interest:")
