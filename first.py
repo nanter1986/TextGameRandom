@@ -40,6 +40,7 @@ def handleDirectionInput(direction):
     else:
         print("uknown command")
 
+#new phone
 mainDb()
 pInventory()
 #pLocation()
