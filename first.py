@@ -23,6 +23,8 @@ def pMoney():
     displayMoney(money)
 
 
+def createRandomNumberOfObjects():
+    pass
 
 def directionInput():
     print("What do you want to explore?")
