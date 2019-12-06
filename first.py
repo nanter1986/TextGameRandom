@@ -3,6 +3,7 @@ from roomGenerator import *
 from inventoryHandler import *
 from moneyManager import *
 from dbEditor import *
+from secrets import randbelow
 from npcObjects import npcObjects
 
 inventory=createInventory()
@@ -24,7 +25,7 @@ def pMoney():
 
 
 def createRandomNumberOfObjects():
-    pass
+    randomNumber=randbelow(probability)
 
 def directionInput():
     print("What do you want to explore?")
