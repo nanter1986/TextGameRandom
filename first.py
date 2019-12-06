@@ -6,6 +6,7 @@ from dbEditor import *
 from secrets import randbelow
 from npcObjects import npcObjects
 
+MAX_NUMBER_OF_OBJECTS=5
 inventory=createInventory()
 money=106
 
@@ -25,11 +26,12 @@ def pMoney():
 
 
 def createRandomNumberOfObjects():
-    randomNumber=randbelow(probability)
+    randomNumber=randbelow(MAX_NUMBER_OF_OBJECTS)
+    return randomNumber
 
 def directionInput():
     print("What do you want to explore?")
-    createRandomNumberOfObjects()
+    numOfObjects=createRandomNumberOfObjects()
     npc=npcObjects()
     print(npc.name)
     print("points of interest:")
