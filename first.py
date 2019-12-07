@@ -32,7 +32,8 @@ def createRandomNumberOfObjects():
 def directionInput():
     print("What do you want to explore?")
     numOfObjects=createRandomNumberOfObjects()
-    npc=npcObjects()
+    npc=create_number_of_objects_and_loop_through(numOfObjects)
+    #npc=npcObjects()
     print(npc.name)
     print("points of interest:")
     print(npc.pointsOfInterest)
