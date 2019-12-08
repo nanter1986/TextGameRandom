@@ -33,7 +33,7 @@ def createRandomNumberOfObjects():
         npc.append(npcNew)
         print(npcNew.name)
         print("points of interest:")
-        print(npc.pointsOfInterest)
+        print(npcNew.pointsOfInterest)
     return npc
 
 def directionInput():
