@@ -26,17 +26,19 @@ def pMoney():
 
 
 def createRandomNumberOfObjects():
+    npc=[]
     randomNumber=randbelow(MAX_NUMBER_OF_OBJECTS)
-    return randomNumber
+    for i in range(MAX_NUMBER_OF_OBJECTS):
+        npcNew=npcObjects()
+        npc.append(npcNew)
+        print(npcNew.name)
+        print("points of interest:")
+        print(npc.pointsOfInterest)
+    return npc
 
 def directionInput():
     print("What do you want to explore?")
-    numOfObjects=createRandomNumberOfObjects()
-    npc=create_number_of_objects_and_loop_through(numOfObjects)
-    #npc=npcObjects()
-    print(npc.name)
-    print("points of interest:")
-    print(npc.pointsOfInterest)
+    npc=createRandomNumberOfObjects()
 
 def handleDirectionInput(direction):
     if direction=="l":
