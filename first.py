@@ -31,7 +31,7 @@ def createRandomNumberOfObjects():
     for i in range(MAX_NUMBER_OF_OBJECTS):
         npcNew=npcObjects()
         npc.append(npcNew)
-        print(npcNew.name)
+        print(str(i+1)+npcNew.name)
         print("points of interest:")
         print(npcNew.pointsOfInterest)
     return npc
