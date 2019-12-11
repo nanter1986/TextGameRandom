@@ -28,7 +28,7 @@ def pMoney():
 def createRandomNumberOfObjects():
     npc=[]
     randomNumber=randbelow(MAX_NUMBER_OF_OBJECTS)
-    for i in range(MAX_NUMBER_OF_OBJECTS):
+    for i in range(randomNumber):
         npcNew=npcObjects()
         npc.append(npcNew)
         print(str(i+1)+"."+npcNew.name)
