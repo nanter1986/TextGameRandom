@@ -48,6 +48,9 @@ def handleDirectionInput(direction):
     else:
         print("uknown command")
 
+def handl_choice():
+    pass
+
 #new phone
 mainDb()
 pInventory()
