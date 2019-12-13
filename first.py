@@ -10,6 +10,10 @@ MAX_NUMBER_OF_OBJECTS=5
 inventory=createInventory()
 money=106
 
+
+def handle_choice(npc_list):
+    pass
+
 def pInventory():
     displayInventory(inventory)
 
@@ -39,6 +43,8 @@ def createRandomNumberOfObjects():
 def directionInput():
     print("What do you want to explore?")
     npc=createRandomNumberOfObjects()
+    npc_chosen=handle_choice(npc)
+    
 
 def handleDirectionInput(direction):
     if direction=="l":
@@ -48,8 +54,6 @@ def handleDirectionInput(direction):
     else:
         print("uknown command")
 
-def handl_choice():
-    pass
 
 #new phone
 mainDb()
