@@ -14,6 +14,10 @@ money=106
 def handle_choice(npc_list):
     print("What is your choice?")
     choice=input("Choose")
+    if choice=="1":
+        pass
+    else:
+        pass
 
 def pInventory():
     displayInventory(inventory)
