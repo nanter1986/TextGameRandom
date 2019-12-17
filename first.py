@@ -14,6 +14,7 @@ money=106
 def handle_choice(npc_list):
     print("What is your choice?")
     choice=input("Choose")
+    seeIfUserInputIsWithinListRange(choice,npc_list)
     if choice=="1":
         pass
     else:
