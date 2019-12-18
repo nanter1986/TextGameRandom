@@ -10,6 +10,8 @@ MAX_NUMBER_OF_OBJECTS=5
 inventory=createInventory()
 money=106
 
+def seeIfUserInputIsWithinListRange(choice,the_list):
+    pass
 
 def handle_choice(npc_list):
     print("What is your choice?")
