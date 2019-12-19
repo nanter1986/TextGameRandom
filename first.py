@@ -11,7 +11,7 @@ inventory=createInventory()
 money=106
 
 def seeIfUserInputIsWithinListRange(choice,the_list):
-    pass
+    length_of_list=len(the_list)
 
 def handle_choice(npc_list):
     print("What is your choice?")
