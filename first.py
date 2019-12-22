@@ -14,7 +14,9 @@ def seeIfUserInputIsWithinListRange(choice,the_list):
     length_of_list=len(the_list)
     int_choice=int(choice)-1
     if int_choice>length_of_list:
-        pass
+        return 0
+    else
+        return 1
 
 def handle_choice(npc_list):
     print("What is your choice?")
