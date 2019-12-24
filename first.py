@@ -20,10 +20,13 @@ def seeIfUserInputIsWithinListRange(choice,the_list):
 
 def handle_choice(npc_list):
     correct=0
+    choice=-1
     while correct==0:
         print("What is your choice?")
         choice=input("Choose")
-        correct=1seeIfUserInputIsWithinListRange(choice,npc_list)
+        correct=seeIfUserInputIsWithinListRange(choice,npc_list)
+        if correct==1:
+            choiceFromList=npc_list[choice]
 
 def pInventory():
     displayInventory(inventory)
