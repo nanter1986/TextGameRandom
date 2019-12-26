@@ -27,6 +27,7 @@ def handle_choice(npc_list):
         correct=seeIfUserInputIsWithinListRange(choice,npc_list)
         if correct==1:
             choiceFromList=npc_list[choice]
+    print("successful choice:"+npc_list[choiceFromList]
     return npc_list[choiceFromList]
 
 def pInventory():
