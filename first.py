@@ -26,7 +26,7 @@ def handle_choice(npc_list):
         choice=input("Choose")
         correct=seeIfUserInputIsWithinListRange(choice,npc_list)
         if correct==1:
-            choiceFromList=npc_list[choice]
+            choiceFromList=npc_list[int(choice)]
     print("successful choice:"+npc_list[choiceFromList])
     return npc_list[choiceFromList]
 
